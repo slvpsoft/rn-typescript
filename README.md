@@ -1,4 +1,4 @@
-# carbon-neutral-app
+# React Native Typescript APP
 
 ## Running the project on Windows
 ```
