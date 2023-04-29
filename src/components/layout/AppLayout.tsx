@@ -5,9 +5,10 @@ import { COLOR } from '../../../lib/constants/color';
 
 type AppLayoutProps = {
   children: ReactNode;
+  paddingTop?: number;
 };
 
-export default function AppLayout({ children }: AppLayoutProps) {
+export default function AppLayout({ children, paddingTop = 0 }: AppLayoutProps) {
   const darkmode = useDarkmodeStore((state: UseDarkmodeStoreType) => state.darkmode);
   console.log({ darkmode });
 
@@ -16,5 +17,5 @@ export default function AppLayout({ children }: AppLayoutProps) {
       backgroundColor: darkmode ? COLOR.DARK : COLOR.LIGHT,
     },
   });
-  return <ScrollView style={[{ flex: 1 }, styles.theme]}>{children}</ScrollView>;
+  return <ScrollView style={[{ flex: 1, paddingTop }, styles.theme]}>{children}</ScrollView>;
 }

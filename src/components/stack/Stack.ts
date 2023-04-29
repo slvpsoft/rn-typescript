@@ -5,6 +5,7 @@ export type RootStackParamList = {
   Login: undefined;
   Register: undefined;
   Dashboard: undefined;
+  GetStarted: undefined;
 };
 
 export const Stack = createStackNavigator<RootStackParamList>();
