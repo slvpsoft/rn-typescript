@@ -1,4 +1,4 @@
-# React Native Typescript APP
+# React Native Typescript APP - Test 
 
 ## Running the project on Windows
 ```
